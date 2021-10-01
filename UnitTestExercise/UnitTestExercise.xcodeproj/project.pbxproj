@@ -19,6 +19,7 @@
 		985F66412705C72900D58885 /* PasswordValidatorTests2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985F66402705C72900D58885 /* PasswordValidatorTests2.swift */; };
 		985F66432705D47C00D58885 /* LifecycleOfXCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985F66422705D47C00D58885 /* LifecycleOfXCTest.swift */; };
 		985F66452705D57400D58885 /* 3-7_OriginalAssertionMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985F66442705D57400D58885 /* 3-7_OriginalAssertionMethod.swift */; };
+		98BCED05270712D700B42EA0 /* 3-8_TestForAsynchronousProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BCED04270712D700B42EA0 /* 3-8_TestForAsynchronousProcessing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		985F66402705C72900D58885 /* PasswordValidatorTests2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidatorTests2.swift; sourceTree = "<group>"; };
 		985F66422705D47C00D58885 /* LifecycleOfXCTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifecycleOfXCTest.swift; sourceTree = "<group>"; };
 		985F66442705D57400D58885 /* 3-7_OriginalAssertionMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3-7_OriginalAssertionMethod.swift"; sourceTree = "<group>"; };
+		98BCED04270712D700B42EA0 /* 3-8_TestForAsynchronousProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3-8_TestForAsynchronousProcessing.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				985F66402705C72900D58885 /* PasswordValidatorTests2.swift */,
 				985F66422705D47C00D58885 /* LifecycleOfXCTest.swift */,
 				985F66442705D57400D58885 /* 3-7_OriginalAssertionMethod.swift */,
+				98BCED04270712D700B42EA0 /* 3-8_TestForAsynchronousProcessing.swift */,
 				985F66272704676100D58885 /* Info.plist */,
 			);
 			path = UnitTestExerciseTests;
@@ -283,6 +286,7 @@
 				985F66412705C72900D58885 /* PasswordValidatorTests2.swift in Sources */,
 				985F66262704676100D58885 /* UnitTestExerciseTests.swift in Sources */,
 				985F66452705D57400D58885 /* 3-7_OriginalAssertionMethod.swift in Sources */,
+				98BCED05270712D700B42EA0 /* 3-8_TestForAsynchronousProcessing.swift in Sources */,
 				985F66432705D47C00D58885 /* LifecycleOfXCTest.swift in Sources */,
 				985F663F27046A2100D58885 /* PasswordValidatorTests.swift in Sources */,
 			);
