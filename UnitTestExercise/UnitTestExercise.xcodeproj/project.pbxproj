@@ -20,6 +20,10 @@
 		985F66432705D47C00D58885 /* LifecycleOfXCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985F66422705D47C00D58885 /* LifecycleOfXCTest.swift */; };
 		985F66452705D57400D58885 /* 3-7_OriginalAssertionMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985F66442705D57400D58885 /* 3-7_OriginalAssertionMethod.swift */; };
 		98BCED05270712D700B42EA0 /* 3-8_TestForAsynchronousProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BCED04270712D700B42EA0 /* 3-8_TestForAsynchronousProcessing.swift */; };
+		98BCED07270964A700B42EA0 /* 3-9_ExceptionTestForErrorHandlings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BCED06270964A700B42EA0 /* 3-9_ExceptionTestForErrorHandlings.swift */; };
+		98BCED092709683D00B42EA0 /* 3-10_ConstractorInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BCED082709683D00B42EA0 /* 3-10_ConstractorInjection.swift */; };
+		98BCED0B27096B9400B42EA0 /* 3-10_SetterInjection1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BCED0A27096B9400B42EA0 /* 3-10_SetterInjection1.swift */; };
+		98BCED0D27096DC100B42EA0 /* 3-10_SetterInjection2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BCED0C27096DC100B42EA0 /* 3-10_SetterInjection2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		985F66422705D47C00D58885 /* LifecycleOfXCTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifecycleOfXCTest.swift; sourceTree = "<group>"; };
 		985F66442705D57400D58885 /* 3-7_OriginalAssertionMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3-7_OriginalAssertionMethod.swift"; sourceTree = "<group>"; };
 		98BCED04270712D700B42EA0 /* 3-8_TestForAsynchronousProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3-8_TestForAsynchronousProcessing.swift"; sourceTree = "<group>"; };
+		98BCED06270964A700B42EA0 /* 3-9_ExceptionTestForErrorHandlings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3-9_ExceptionTestForErrorHandlings.swift"; sourceTree = "<group>"; };
+		98BCED082709683D00B42EA0 /* 3-10_ConstractorInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3-10_ConstractorInjection.swift"; sourceTree = "<group>"; };
+		98BCED0A27096B9400B42EA0 /* 3-10_SetterInjection1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3-10_SetterInjection1.swift"; sourceTree = "<group>"; };
+		98BCED0C27096DC100B42EA0 /* 3-10_SetterInjection2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3-10_SetterInjection2.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +137,10 @@
 				985F66422705D47C00D58885 /* LifecycleOfXCTest.swift */,
 				985F66442705D57400D58885 /* 3-7_OriginalAssertionMethod.swift */,
 				98BCED04270712D700B42EA0 /* 3-8_TestForAsynchronousProcessing.swift */,
+				98BCED06270964A700B42EA0 /* 3-9_ExceptionTestForErrorHandlings.swift */,
+				98BCED082709683D00B42EA0 /* 3-10_ConstractorInjection.swift */,
+				98BCED0A27096B9400B42EA0 /* 3-10_SetterInjection1.swift */,
+				98BCED0C27096DC100B42EA0 /* 3-10_SetterInjection2.swift */,
 				985F66272704676100D58885 /* Info.plist */,
 			);
 			path = UnitTestExerciseTests;
@@ -286,9 +298,13 @@
 				985F66412705C72900D58885 /* PasswordValidatorTests2.swift in Sources */,
 				985F66262704676100D58885 /* UnitTestExerciseTests.swift in Sources */,
 				985F66452705D57400D58885 /* 3-7_OriginalAssertionMethod.swift in Sources */,
+				98BCED0D27096DC100B42EA0 /* 3-10_SetterInjection2.swift in Sources */,
 				98BCED05270712D700B42EA0 /* 3-8_TestForAsynchronousProcessing.swift in Sources */,
 				985F66432705D47C00D58885 /* LifecycleOfXCTest.swift in Sources */,
 				985F663F27046A2100D58885 /* PasswordValidatorTests.swift in Sources */,
+				98BCED0B27096B9400B42EA0 /* 3-10_SetterInjection1.swift in Sources */,
+				98BCED07270964A700B42EA0 /* 3-9_ExceptionTestForErrorHandlings.swift in Sources */,
+				98BCED092709683D00B42EA0 /* 3-10_ConstractorInjection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
