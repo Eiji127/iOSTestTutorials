@@ -4,10 +4,42 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Nightly.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>UnitTestExercise.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>UnitTests.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>985F660A2704675F00D58885</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>985F66202704676100D58885</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>985F662B2704676100D58885</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

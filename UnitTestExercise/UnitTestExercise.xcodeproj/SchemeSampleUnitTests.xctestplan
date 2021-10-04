@@ -1,0 +1,39 @@
+{
+  "configurations" : [
+    {
+      "id" : "6AD6BAEF-CB20-4C86-83D4-A1FE2B18421B",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:UnitTestExercise.xcodeproj",
+      "identifier" : "985F660A2704675F00D58885",
+      "name" : "UnitTestExercise"
+    }
+  },
+  "testTargets" : [
+    {
+      "skippedTests" : [
+        "DialogManagerTests",
+        "ExceptionTests",
+        "NumericStringTests",
+        "PasswordValidatorTests",
+        "PasswordValidatorTests2",
+        "SampleTests",
+        "UnitTestExerciseTests",
+        "UserManagerTests"
+      ],
+      "target" : {
+        "containerPath" : "container:UnitTestExercise.xcodeproj",
+        "identifier" : "985F66202704676100D58885",
+        "name" : "UnitTestExerciseTests"
+      }
+    }
+  ],
+  "version" : 1
+}

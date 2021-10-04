@@ -24,6 +24,9 @@
 		98BCED092709683D00B42EA0 /* 3-10_ConstractorInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BCED082709683D00B42EA0 /* 3-10_ConstractorInjection.swift */; };
 		98BCED0B27096B9400B42EA0 /* 3-10_SetterInjection1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BCED0A27096B9400B42EA0 /* 3-10_SetterInjection1.swift */; };
 		98BCED0D27096DC100B42EA0 /* 3-10_SetterInjection2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BCED0C27096DC100B42EA0 /* 3-10_SetterInjection2.swift */; };
+		98BCED0F270979DA00B42EA0 /* 3-10_StubForTestDoubles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BCED0E270979DA00B42EA0 /* 3-10_StubForTestDoubles.swift */; };
+		98BCED11270981F700B42EA0 /* 3-10_MockForTestDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BCED10270981F700B42EA0 /* 3-10_MockForTestDouble.swift */; };
+		98BCED13270ACA1800B42EA0 /* 3-11_OHHTTPStubsSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BCED12270ACA1800B42EA0 /* 3-11_OHHTTPStubsSample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,10 @@
 		98BCED082709683D00B42EA0 /* 3-10_ConstractorInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3-10_ConstractorInjection.swift"; sourceTree = "<group>"; };
 		98BCED0A27096B9400B42EA0 /* 3-10_SetterInjection1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3-10_SetterInjection1.swift"; sourceTree = "<group>"; };
 		98BCED0C27096DC100B42EA0 /* 3-10_SetterInjection2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3-10_SetterInjection2.swift"; sourceTree = "<group>"; };
+		98BCED0E270979DA00B42EA0 /* 3-10_StubForTestDoubles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3-10_StubForTestDoubles.swift"; sourceTree = "<group>"; };
+		98BCED10270981F700B42EA0 /* 3-10_MockForTestDouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3-10_MockForTestDouble.swift"; sourceTree = "<group>"; };
+		98BCED12270ACA1800B42EA0 /* 3-11_OHHTTPStubsSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3-11_OHHTTPStubsSample.swift"; sourceTree = "<group>"; };
+		98BCED14270AD71E00B42EA0 /* SchemeSampleUnitTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = SchemeSampleUnitTests.xctestplan; path = UnitTestExercise.xcodeproj/SchemeSampleUnitTests.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +104,7 @@
 		985F66022704675F00D58885 = {
 			isa = PBXGroup;
 			children = (
+				98BCED14270AD71E00B42EA0 /* SchemeSampleUnitTests.xctestplan */,
 				985F660D2704675F00D58885 /* UnitTestExercise */,
 				985F66242704676100D58885 /* UnitTestExerciseTests */,
 				985F662F2704676100D58885 /* UnitTestExerciseUITests */,
@@ -141,6 +149,9 @@
 				98BCED082709683D00B42EA0 /* 3-10_ConstractorInjection.swift */,
 				98BCED0A27096B9400B42EA0 /* 3-10_SetterInjection1.swift */,
 				98BCED0C27096DC100B42EA0 /* 3-10_SetterInjection2.swift */,
+				98BCED0E270979DA00B42EA0 /* 3-10_StubForTestDoubles.swift */,
+				98BCED10270981F700B42EA0 /* 3-10_MockForTestDouble.swift */,
+				98BCED12270ACA1800B42EA0 /* 3-11_OHHTTPStubsSample.swift */,
 				985F66272704676100D58885 /* Info.plist */,
 			);
 			path = UnitTestExerciseTests;
@@ -296,11 +307,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				985F66412705C72900D58885 /* PasswordValidatorTests2.swift in Sources */,
+				98BCED13270ACA1800B42EA0 /* 3-11_OHHTTPStubsSample.swift in Sources */,
 				985F66262704676100D58885 /* UnitTestExerciseTests.swift in Sources */,
 				985F66452705D57400D58885 /* 3-7_OriginalAssertionMethod.swift in Sources */,
 				98BCED0D27096DC100B42EA0 /* 3-10_SetterInjection2.swift in Sources */,
 				98BCED05270712D700B42EA0 /* 3-8_TestForAsynchronousProcessing.swift in Sources */,
+				98BCED0F270979DA00B42EA0 /* 3-10_StubForTestDoubles.swift in Sources */,
 				985F66432705D47C00D58885 /* LifecycleOfXCTest.swift in Sources */,
+				98BCED11270981F700B42EA0 /* 3-10_MockForTestDouble.swift in Sources */,
 				985F663F27046A2100D58885 /* PasswordValidatorTests.swift in Sources */,
 				98BCED0B27096B9400B42EA0 /* 3-10_SetterInjection1.swift in Sources */,
 				98BCED07270964A700B42EA0 /* 3-9_ExceptionTestForErrorHandlings.swift in Sources */,

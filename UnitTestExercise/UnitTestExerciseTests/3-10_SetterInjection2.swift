@@ -33,5 +33,5 @@ class B: BInput {
 
 let a = A()
 let b = B()
-a.inject(b: b)
-b.inject(a: a)
+//a.inject(b: b)
+//b.inject(a: a)

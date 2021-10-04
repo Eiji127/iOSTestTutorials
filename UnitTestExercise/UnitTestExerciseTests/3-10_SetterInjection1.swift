@@ -22,4 +22,4 @@ class ViewController: UIViewController {
 let viewController = UIStoryboard(name: "ViewController", bundle: nil).instantiateInitialViewController() as? ViewController
 
 let presenter = Presenter()
-viewController?.inject(presenter: presenter)
+//viewController?.inject(presenter: presenter)
