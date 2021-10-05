@@ -32,6 +32,9 @@
 		98BCED1A270B0A1B00B42EA0 /* 4-2_QuickSample_beforeEach_afterEach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BCED19270B0A1B00B42EA0 /* 4-2_QuickSample_beforeEach_afterEach.swift */; };
 		98BCED1C270B0F9800B42EA0 /* 4-2_QuickSample_Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BCED1B270B0F9800B42EA0 /* 4-2_QuickSample_Behavior.swift */; };
 		98BCED1E270B131300B42EA0 /* 4-3_NimbleSampleCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BCED1D270B131300B42EA0 /* 4-3_NimbleSampleCode.swift */; };
+		98BCED20270B438800B42EA0 /* 4-3_OriginalValidationByNimble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BCED1F270B438800B42EA0 /* 4-3_OriginalValidationByNimble.swift */; };
+		98BCED22270C331700B42EA0 /* 4-3_AsynchronizedProcessingByNimble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BCED21270C331700B42EA0 /* 4-3_AsynchronizedProcessingByNimble.swift */; };
+		98BCED24270C37B300B42EA0 /* 4-3_CreationOfOriginalMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BCED23270C37B300B42EA0 /* 4-3_CreationOfOriginalMatcher.swift */; };
 		B383BAC392C55FAB084368C0 /* Pods_UnitTestExerciseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAAB0C97695FEC07CF7C0BF2 /* Pods_UnitTestExerciseTests.framework */; };
 		DE46ECAF72AD5E2B28D3C254 /* Pods_UnitTestExercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CF31145108AAD2BF190A3A /* Pods_UnitTestExercise.framework */; };
 		EA1808842D0A8A68840E6165 /* Pods_UnitTestExercise_UnitTestExerciseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7778298E9882B527CE802206 /* Pods_UnitTestExercise_UnitTestExerciseUITests.framework */; };
@@ -93,6 +96,9 @@
 		98BCED19270B0A1B00B42EA0 /* 4-2_QuickSample_beforeEach_afterEach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "4-2_QuickSample_beforeEach_afterEach.swift"; sourceTree = "<group>"; };
 		98BCED1B270B0F9800B42EA0 /* 4-2_QuickSample_Behavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "4-2_QuickSample_Behavior.swift"; sourceTree = "<group>"; };
 		98BCED1D270B131300B42EA0 /* 4-3_NimbleSampleCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "4-3_NimbleSampleCode.swift"; sourceTree = "<group>"; };
+		98BCED1F270B438800B42EA0 /* 4-3_OriginalValidationByNimble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "4-3_OriginalValidationByNimble.swift"; sourceTree = "<group>"; };
+		98BCED21270C331700B42EA0 /* 4-3_AsynchronizedProcessingByNimble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "4-3_AsynchronizedProcessingByNimble.swift"; sourceTree = "<group>"; };
+		98BCED23270C37B300B42EA0 /* 4-3_CreationOfOriginalMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "4-3_CreationOfOriginalMatcher.swift"; sourceTree = "<group>"; };
 		CD5F0F2BFA002BF467812C1E /* Pods-UnitTestExerciseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestExerciseTests.debug.xcconfig"; path = "Target Support Files/Pods-UnitTestExerciseTests/Pods-UnitTestExerciseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E0CF31145108AAD2BF190A3A /* Pods_UnitTestExercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnitTestExercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAAB0C97695FEC07CF7C0BF2 /* Pods_UnitTestExerciseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnitTestExerciseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -194,6 +200,9 @@
 				98BCED19270B0A1B00B42EA0 /* 4-2_QuickSample_beforeEach_afterEach.swift */,
 				98BCED1B270B0F9800B42EA0 /* 4-2_QuickSample_Behavior.swift */,
 				98BCED1D270B131300B42EA0 /* 4-3_NimbleSampleCode.swift */,
+				98BCED1F270B438800B42EA0 /* 4-3_OriginalValidationByNimble.swift */,
+				98BCED21270C331700B42EA0 /* 4-3_AsynchronizedProcessingByNimble.swift */,
+				98BCED23270C37B300B42EA0 /* 4-3_CreationOfOriginalMatcher.swift */,
 				985F66272704676100D58885 /* Info.plist */,
 			);
 			path = UnitTestExerciseTests;
@@ -470,8 +479,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				98BCED1E270B131300B42EA0 /* 4-3_NimbleSampleCode.swift in Sources */,
+				98BCED24270C37B300B42EA0 /* 4-3_CreationOfOriginalMatcher.swift in Sources */,
 				98BCED16270AE03D00B42EA0 /* 4-1_QuickAndNimbleSampleCode.swift in Sources */,
 				985F66412705C72900D58885 /* PasswordValidatorTests2.swift in Sources */,
+				98BCED22270C331700B42EA0 /* 4-3_AsynchronizedProcessingByNimble.swift in Sources */,
+				98BCED20270B438800B42EA0 /* 4-3_OriginalValidationByNimble.swift in Sources */,
 				98BCED13270ACA1800B42EA0 /* 3-11_OHHTTPStubsSample.swift in Sources */,
 				985F66262704676100D58885 /* UnitTestExerciseTests.swift in Sources */,
 				985F66452705D57400D58885 /* 3-7_OriginalAssertionMethod.swift in Sources */,
