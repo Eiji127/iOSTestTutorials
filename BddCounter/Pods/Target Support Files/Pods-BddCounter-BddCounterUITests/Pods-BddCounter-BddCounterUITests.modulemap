@@ -1,0 +1,6 @@
+framework module Pods_BddCounter_BddCounterUITests {
+  umbrella header "Pods-BddCounter-BddCounterUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

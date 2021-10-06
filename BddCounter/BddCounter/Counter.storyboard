@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Counter View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="CounterViewController" customModule="BddCounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxh-qg-8wC">
+                                <rect key="frame" x="182" y="406" width="50" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="dpK-BI-sLp"/>
+                                    <constraint firstAttribute="height" constant="84" id="mEJ-n2-p8V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAh-mK-fEx">
+                                <rect key="frame" x="252" y="497" width="57" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="57" id="iNX-FW-oMo"/>
+                                    <constraint firstAttribute="height" constant="72" id="lof-LL-OcJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="tapIncrementButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Bes-uP-Tns"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6Z-Rc-aqI">
+                                <rect key="frame" x="95" y="497" width="60" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="HDG-fe-yd3"/>
+                                    <constraint firstAttribute="height" constant="72" id="bZK-iv-wE4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="tapDecrementButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="MM6-sQ-mOd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MAh-mK-fEx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="N6Z-Rc-aqI" secondAttribute="trailing" constant="67" id="INQ-lj-ZI0"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MAh-mK-fEx" secondAttribute="trailing" constant="105" id="Ja3-2k-Yhe"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="N6Z-Rc-aqI" secondAttribute="bottom" constant="293" id="Qkm-5n-ohp"/>
+                            <constraint firstItem="N6Z-Rc-aqI" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="453" id="kg5-uT-q63"/>
+                            <constraint firstItem="Gxh-qg-8wC" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="ljl-uj-e1j"/>
+                            <constraint firstItem="MAh-mK-fEx" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="453" id="lrR-tS-2b9"/>
+                            <constraint firstItem="N6Z-Rc-aqI" firstAttribute="leading" relation="lessThanOrEqual" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="125" id="mMh-Hr-DSe"/>
+                            <constraint firstItem="Gxh-qg-8wC" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="tBn-GK-ER1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="MAh-mK-fEx" secondAttribute="bottom" constant="293" id="vMQ-Q0-4xV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countLabel" destination="Gxh-qg-8wC" id="1WK-5a-OJn"/>
+                        <outlet property="decrementButton" destination="N6Z-Rc-aqI" id="FpA-te-sOg"/>
+                        <outlet property="incrementButton" destination="MAh-mK-fEx" id="jXO-I7-HfL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
