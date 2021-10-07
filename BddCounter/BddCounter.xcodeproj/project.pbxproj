@@ -20,7 +20,7 @@
 		98BCEDA4270D818F00B42EA0 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BCEDA3270D818F00B42EA0 /* CounterViewController.swift */; };
 		98BCEDA6270D819700B42EA0 /* Counter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98BCEDA5270D819700B42EA0 /* Counter.storyboard */; };
 		98BCEDA8270D838F00B42EA0 /* CounterViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BCEDA7270D838F00B42EA0 /* CounterViewControllerTests.swift */; };
-		98BCEDAA270D8AAB00B42EA0 /* CounterViewConrollerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BCEDA9270D8AAB00B42EA0 /* CounterViewConrollerSpec.swift */; };
+		98BCEDAA270D8AAB00B42EA0 /* CounterViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BCEDA9270D8AAB00B42EA0 /* CounterViewControllerSpec.swift */; };
 		FD6BFF9341AA9462CECABA1D /* Pods_BddCounterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B133D1BFD247978CCDA895 /* Pods_BddCounterTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,7 +67,7 @@
 		98BCEDA3270D818F00B42EA0 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 		98BCEDA5270D819700B42EA0 /* Counter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Counter.storyboard; sourceTree = "<group>"; };
 		98BCEDA7270D838F00B42EA0 /* CounterViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewControllerTests.swift; sourceTree = "<group>"; };
-		98BCEDA9270D8AAB00B42EA0 /* CounterViewConrollerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewConrollerSpec.swift; sourceTree = "<group>"; };
+		98BCEDA9270D8AAB00B42EA0 /* CounterViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewControllerSpec.swift; sourceTree = "<group>"; };
 		D8F386E79EE69D1BCD2F1852 /* Pods_BddCounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BddCounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -155,7 +155,7 @@
 			children = (
 				98BCED8A270D817D00B42EA0 /* BddCounterTests.swift */,
 				98BCEDA7270D838F00B42EA0 /* CounterViewControllerTests.swift */,
-				98BCEDA9270D8AAB00B42EA0 /* CounterViewConrollerSpec.swift */,
+				98BCEDA9270D8AAB00B42EA0 /* CounterViewControllerSpec.swift */,
 				98BCED8C270D817D00B42EA0 /* Info.plist */,
 			);
 			path = BddCounterTests;
@@ -432,7 +432,7 @@
 			files = (
 				98BCEDA8270D838F00B42EA0 /* CounterViewControllerTests.swift in Sources */,
 				98BCED8B270D817D00B42EA0 /* BddCounterTests.swift in Sources */,
-				98BCEDAA270D8AAB00B42EA0 /* CounterViewConrollerSpec.swift in Sources */,
+				98BCEDAA270D8AAB00B42EA0 /* CounterViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

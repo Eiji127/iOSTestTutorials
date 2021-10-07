@@ -45,5 +45,10 @@ class CounterViewController: UIViewController {
     
     private func updateView() {
         countLabel.text = "\(count)"
+        // 「-」ボタンの活性制御
+        decrementButton.isEnabled = count > 0
+        
+        // 「+」ボタンの活性制御
+        incrementButton.isEnabled = count < 10
     }
 }
