@@ -51,9 +51,7 @@ class CounterViewSpec: QuickSpec {
             context("上限に達した場合") {
                 beforeEach {
                     // ① 「+」ボタンを10回タップ
-                    for _ in 1...10 {
-                        vc.incrementButton.tap()
-                    }
+                    vc.incrementButton.tap(repeat: 10)
                 }
                 it("上限値なので「+」ボタンが非活性になること") {
                     expect(vc.countLabel.text).to(equal("10"))
@@ -80,9 +78,7 @@ class CounterViewSpec: QuickSpec {
             }
             context("現在値が「10」(上限値)") {
                 beforeEach {
-                    for _ in 1...10 {
-                        vc.incrementButton.tap()
-                    }
+                    vc.incrementButton.tap(repeat: 10)
                     vc.decrementButton.tap()
                 }
                 it("カウンタが「9」に減ること") {
@@ -93,13 +89,47 @@ class CounterViewSpec: QuickSpec {
                 }
             }
         }
+        
+        // ⑤ ボタンタップ時にUserDefaultsのキー「count」に値が保存したことのテスト
+        describe("現在値の保存") {
+            context("現在値が2") {
+                
+                // 事前にカウントを「2」し、
+                // UserDefaultsのキー「count」を0でクリアしておく
+                beforeEach {
+                    vc.incrementButton.tap(repeat: 2)
+                    UserDefaults.standard.set(0, forKey: "count")
+                }
+                
+                context("「+」ボタンをタップ") {       
+                    it("現在値「3」がUserDefaultsに保存されること") {
+                        vc.incrementButton.tap()
+                        
+                        // UserDefaultsのキー「count」から値を取得してアサーション
+                        let actual = UserDefaults.standard.integer(forKey: "count")
+                        expect(actual).to(equal(3))
+                    }
+                }
+                
+                context("「-」ボタンをタップ") {
+                    it("現在値「1」がUserDefaultsに保存されること") {
+                        vc.decrementButton.tap()
+                        
+                        let actual = UserDefaults.standard.integer(forKey: "count")
+                        expect(actual).to(equal(1))
+                    }
+                }
+            }
+        }
     }
 }
 
 // MARK: - Extensions
 
 extension UIButton {
-    func tap() {
-        self.sendActions(for: .touchUpInside)
+    func tap(repeat: Int = 1) {
+        for _ in 1...`repeat` {
+            self.sendActions(for: .touchUpInside)
+        }
     }
 }

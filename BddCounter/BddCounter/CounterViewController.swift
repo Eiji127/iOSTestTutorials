@@ -7,6 +7,29 @@
 
 import UIKit
 
+class Counter {
+    private (set) var count: Int
+    
+    var isLowerLimit: Bool {
+        return count == 0
+    }
+    var isUpperLimit: Bool {
+        return count == 10
+    }
+    
+    init(count: Int = 0) {
+        self.count = count
+    }
+    
+    func increment() {
+        count += 1
+    }
+    
+    func decrement() {
+        count -= 1
+    }
+}
+
 class CounterViewController: UIViewController {
     
     // MARK: - Properties
@@ -16,6 +39,8 @@ class CounterViewController: UIViewController {
     @IBOutlet weak var incrementButton: UIButton!
     
     var count: Int = 0
+    
+    var counter = Counter()
     
     // MARK: - Lifecycle
     
@@ -32,23 +57,23 @@ class CounterViewController: UIViewController {
     }
     
     @IBAction func tapIncrementButton(_ sender: Any) {
-        count += 1
+        counter.increment()
         updateView()
     }
     
     @IBAction func tapDecrementButton(_ sender: Any) {
-        count -= 1
+        counter.decrement()
         updateView()
     }
     
     // MARK: - Helpers
     
     private func updateView() {
-        countLabel.text = "\(count)"
+        countLabel.text = "\(counter.count)"
         // 「-」ボタンの活性制御
-        decrementButton.isEnabled = count > 0
+        decrementButton.isEnabled = !counter.isLowerLimit
         
         // 「+」ボタンの活性制御
-        incrementButton.isEnabled = count < 10
+        incrementButton.isEnabled = !counter.isUpperLimit
     }
 }
